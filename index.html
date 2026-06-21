@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Father's Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="stage-wrap">
+<div class="envelope-stage" id="envelopeStage" onclick="openEnvelope()">
+  <div class="envelope" id="envelope">
+    <div class="env-back"></div>
+    <div class="env-fold"></div>
+    <div class="env-flap"></div>
+    <div class="env-seal">💛</div>
+  </div>
+  <div class="tap-hint" id="tapHint">★ TAP TO OPEN ★</div>
+</div>
+
+<div class="card" id="letterCard">
+
+
+  <div class="badge-wrap">
+    <div class="pixel-title">HAPPY<br>FATHER'S DAY</div>
+    <div class="pixel-sub">★ TO THE BEST PAPA ★</div>
+  </div>
+
+  <!-- PIXEL SCENE: sunset fishing dock -->
+  <div class="floaters">
+  <svg class="scene" viewBox="0 0 320 110" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+    <!-- sun -->
+    <rect x="40" y="14" width="6" height="6" fill="#FFF3C4"/>
+    <rect x="34" y="20" width="18" height="18" fill="#FFE08A"/>
+    <rect x="38" y="24" width="10" height="10" fill="#FFF3C4"/>
+
+    <!-- clouds -->
+    <g fill="#FFF6E5" opacity="0.9">
+      <rect x="220" y="16" width="8" height="4"/>
+      <rect x="228" y="12" width="8" height="4"/>
+      <rect x="236" y="16" width="8" height="4"/>
+      <rect x="222" y="20" width="20" height="4"/>
+    </g>
+    <g fill="#FFF6E5" opacity="0.75">
+      <rect x="270" y="34" width="6" height="3"/>
+      <rect x="276" y="31" width="6" height="3"/>
+      <rect x="282" y="34" width="6" height="3"/>
+      <rect x="271" y="37" width="16" height="3"/>
+    </g>
+
+    <!-- water -->
+    <rect x="0" y="62" width="320" height="48" fill="#3D7E8C"/>
+    <g fill="#5AA0AB">
+      <rect x="10" y="70" width="14" height="3"/>
+      <rect x="60" y="80" width="18" height="3"/>
+      <rect x="120" y="72" width="14" height="3"/>
+      <rect x="180" y="86" width="20" height="3"/>
+      <rect x="230" y="74" width="14" height="3"/>
+      <rect x="270" y="90" width="18" height="3"/>
+    </g>
+    <!-- sun reflection -->
+    <g fill="#FFE08A" opacity="0.7">
+      <rect x="36" y="64" width="14" height="3"/>
+      <rect x="38" y="69" width="10" height="3"/>
+      <rect x="40" y="74" width="6" height="3"/>
+    </g>
+
+    <!-- dock -->
+    <rect x="0" y="56" width="120" height="6" fill="#8A5A3B"/>
+    <rect x="0" y="62" width="120" height="4" fill="#6E4429"/>
+    <rect x="14" y="62" width="6" height="30" fill="#6E4429"/>
+    <rect x="60" y="62" width="6" height="30" fill="#6E4429"/>
+    <rect x="100" y="62" width="6" height="30" fill="#6E4429"/>
+
+    <!-- dad figure sitting -->
+    <g>
+      <rect x="74" y="38" width="10" height="6" fill="#E0A172"/> <!-- head -->
+      <rect x="72" y="34" width="14" height="5" fill="#345C72"/> <!-- cap -->
+      <rect x="70" y="44" width="18" height="12" fill="#3D6E8C"/> <!-- shirt -->
+      <rect x="86" y="46" width="10" height="4" fill="#E0A172"/> <!-- arm to rod -->
+      <rect x="70" y="56" width="18" height="6" fill="#2F4858"/> <!-- legs -->
+    </g>
+
+    <!-- fishing rod + line -->
+    <rect x="94" y="40" width="3" height="22" fill="#5A3A22" transform="rotate(28 94 40)"/>
+    <line x1="118" y1="49" x2="150" y2="78" stroke="#E8E0CC" stroke-width="1"/>
+    <rect x="148" y="78" width="4" height="4" fill="#E8E0CC"/>
+
+    <!-- little fish jumping -->
+    <g fill="#F0C04D">
+      <rect x="170" y="58" width="8" height="4"/>
+      <rect x="178" y="56" width="4" height="3"/>
+      <rect x="167" y="59" width="4" height="2"/>
+    </g>
+
+    <!-- grass strip -->
+    <rect x="0" y="92" width="320" height="18" fill="#5C8F5A"/>
+    <g fill="#4D7A4B">
+      <rect x="10" y="92" width="3" height="5"/>
+      <rect x="40" y="92" width="3" height="5"/>
+      <rect x="200" y="92" width="3" height="5"/>
+      <rect x="250" y="92" width="3" height="5"/>
+      <rect x="300" y="92" width="3" height="5"/>
+    </g>
+  </svg>
+
+  <!-- floating pixel hearts over scene -->
+  <svg class="heart-float" style="top:-86px; left:12%;" width="14" height="12" viewBox="0 0 8 7" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#E8735C"><rect x="1" y="0" width="2" height="1"/><rect x="5" y="0" width="2" height="1"/><rect x="0" y="1" width="8" height="2"/><rect x="1" y="3" width="6" height="1"/><rect x="2" y="4" width="4" height="1"/><rect x="3" y="5" width="2" height="1"/></g>
+  </svg>
+  <svg class="heart-float" style="top:-60px; left:80%; animation-delay:1.2s;" width="11" height="9" viewBox="0 0 8 7" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#F0C04D"><rect x="1" y="0" width="2" height="1"/><rect x="5" y="0" width="2" height="1"/><rect x="0" y="1" width="8" height="2"/><rect x="1" y="3" width="6" height="1"/><rect x="2" y="4" width="4" height="1"/><rect x="3" y="5" width="2" height="1"/></g>
+  </svg>
+  </div>
+
+  <div class="content">
+    <p class="greeting">Dear Papa,</p>
+    <div class="letter">
+      <p>Today's a little pixel postcard just for you — one square at a time, like everything you've ever built, fixed, or taught us with endless patience.</p>
+      <p>Thank you for the early mornings, the steady hands, the corny jokes we now tell ourselves, and the quiet ways you've always shown up for us.</p>
+      <p>However you spend today, we hope it's full of rest, good food, and exactly zero chores.</p>
+    </div>
+    <p class="signoff">Happy Father's Day! 🎣</p>
+  </div>
+
+  <div class="why-title">★ WHY YOU'RE THE BEST ★</div>
+  <div class="grid">
+
+    <div class="tile">
+      <svg width="36" height="36" viewBox="0 0 16 16" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="2" width="8" height="2" fill="#345C72"/>
+        <rect x="6" y="4" width="4" height="2" fill="#345C72"/>
+        <rect x="5" y="6" width="6" height="6" fill="#E8735C"/>
+        <rect x="6" y="12" width="4" height="2" fill="#E8735C"/>
+      </svg>
+      <div class="tile-label">Always sharp,<br>even on a Sunday</div>
+    </div>
+
+    <div class="tile">
+      <svg width="36" height="36" viewBox="0 0 16 16" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="6" width="9" height="7" fill="#F0C04D"/>
+        <rect x="3" y="6" width="9" height="2" fill="#F7D87A"/>
+        <rect x="12" y="7" width="2" height="3" fill="none" stroke="#2F4858"/>
+        <rect x="12" y="7" width="3" height="1" fill="#2F4858"/>
+        <rect x="14" y="7" width="1" height="3" fill="#2F4858"/>
+        <rect x="12" y="10" width="3" height="1" fill="#2F4858"/>
+        <rect x="5" y="3" width="1" height="2" fill="#A9D6CF"/>
+        <rect x="7" y="2" width="1" height="3" fill="#A9D6CF"/>
+        <rect x="9" y="3" width="1" height="2" fill="#A9D6CF"/>
+      </svg>
+      <div class="tile-label">Powered entirely<br>by coffee</div>
+    </div>
+
+    <div class="tile">
+      <svg width="36" height="36" viewBox="0 0 16 16" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="3" height="3" fill="#6FB3A0"/>
+        <rect x="2" y="6" width="3" height="3" fill="#345C72"/>
+        <rect x="2" y="10" width="3" height="3" fill="#E8735C"/>
+        <rect x="6" y="6" width="8" height="2" fill="#8A5A3B"/>
+        <rect x="9" y="2" width="2" height="4" fill="#8A5A3B"/>
+      </svg>
+      <div class="tile-label">Fixes anything<br>before we ask</div>
+    </div>
+
+    <div class="tile">
+      <svg width="36" height="36" viewBox="0 0 16 16" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#E8735C">
+          <rect x="3" y="3" width="3" height="2"/>
+          <rect x="10" y="3" width="3" height="2"/>
+          <rect x="2" y="5" width="12" height="4"/>
+          <rect x="3" y="9" width="10" height="2"/>
+          <rect x="5" y="11" width="6" height="2"/>
+          <rect x="7" y="13" width="2" height="1"/>
+        </g>
+      </svg>
+      <div class="tile-label">Biggest heart<br>in the house</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <button class="hug-btn" onclick="sendHug(event)">SEND PAPA A HUG</button>
+    <div class="burst" id="burstZone"></div>
+  </div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
